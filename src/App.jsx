@@ -25,7 +25,6 @@ function App() {
   }
 
   function handleChecked(id, completed) {
-    console.log('getting checked')
     setToDos( currenttoDos => {
       return currenttoDos.map(todo => {
         if(todo.id === id) {
@@ -38,7 +37,6 @@ function App() {
   }
 
   function handleDelete(id) {
-    console.log('getting deleted')
     setToDos( currenttoDos => {
       return currenttoDos.filter(todo => todo.id !== id)
     })
